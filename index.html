@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width='device-width' initial-scale='1.0'">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Password Generator</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -16,9 +16,13 @@
 			<input type="text" readonly id="input-el" placeholder="Create Password">
 			<i class="fa-regular fa-copy"></i>
 		</div>
-		<button class="btn" id="generate-btn">Generate</button>
+		<div class="btns">
+			<button class="btn" id="generate-btn">Generate</button>
+			<input type="range" min="3" max="20" value="10">
+			<span id="range-value"></span>
+		</div>
 	</div>
-	<!-- <div class="notification">password copied</div> -->
+	<div class="notification active">password copied</div>
 	<script src="script.js"></script>
 </body>
 
